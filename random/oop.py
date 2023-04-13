@@ -6,6 +6,9 @@ class Car:
         self.color = color
 
 
+    def printCarModel(self):
+        print(f"Car Model is {self.model}")
+
     @classmethod
     def printNoOfWheel(cls):
         print(cls.no_of_wheel)
@@ -18,6 +21,9 @@ class Car:
 
 bmw = Car("BMW", "Red")
 print(bmw.color)
+
+bmw.printCarModel()
+# Car.printCarModel(bmw) # This is same as above
 
 Car.printNoOfWheel()
 
